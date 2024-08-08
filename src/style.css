@@ -14,7 +14,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-image: url("/src/pizza.jpg");
-    background-position: 0% 75%;;
+    background-position: 0% 75%;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 800;
@@ -90,4 +90,64 @@ h2 {
 img {
     width: min(70ch, 80vw);
     height: auto;
+}
+
+
+.menue {
+    color: white;
+    text-shadow: black 1px 0 5px;
+    display: flex;
+    height: 50ch;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center; /* Vertical alignment */
+    text-align: center;
+}
+
+.pizza {
+    background-image: url("/src/pizza2.jpg");
+    height: 50ch; 
+    background-size: cover;  
+    background-position: center; 
+    border: 2rem solid rgb(245, 245, 239);
+    padding: 0;
+}
+
+.pasta {
+    background-image: url("/src/spaghetti.jpg");
+    height: 50ch; 
+    background-size: cover;  
+    background-position: center; 
+    border: 2rem solid rgb(245, 245, 239);
+    padding: 0;
+}
+
+.burger {
+    background-image: url("/src/burger.jpg");
+    height: 50ch; 
+    background-size: cover;  
+    background-position: center; 
+    border: 2rem solid rgb(245, 245, 239);
+    padding: 0;
+}
+
+.dessert {
+    background-image: url("/src/dessert.jpg");
+    height: 50ch; 
+    background-size: cover;  
+    background-position: center; 
+    border: 2rem solid rgb(245, 245, 239);
+    padding: 0;
+}
+
+.drink {
+    background-image: url("/src/drinks.jpg");
+    height: 50ch; 
+    background-size: cover;  
+    background-position: center; 
+    border: 2rem solid rgb(245, 245, 239);
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
 }

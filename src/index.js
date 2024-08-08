@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const content = document.querySelector("#content");
     const homeBtn = document.querySelector(".home");
     const contactBtn = document.querySelector(".contact");
+    const menuBtn = document.querySelector(".menu");
 
     const loadContent = function(div, page) {
         div.innerHTML = "";
@@ -100,8 +101,51 @@ document.addEventListener("DOMContentLoaded", () => {
         content.appendChild(text_three);
     };
 
+    const menu = function(content) {
+        const text_one = document.createElement("div");
+        text_one.classList.add("text");
+        text_one.classList.add("pizza");
+        text_one.innerHTML = `
+            <h1 class="menue">Pizza</h2>
+        `;
+        content.appendChild(text_one);
+    
+        const text_two = document.createElement("div");
+        text_two.classList.add("text");
+        text_two.classList.add("pasta");
+        text_two.innerHTML = `
+            <h1 class="menue">Pasta</h2>
+        `;
+        content.appendChild(text_two);
+    
+        const text_three = document.createElement("div");
+        text_three.classList.add("text");
+        text_three.classList.add("burger");
+        text_three.innerHTML = `
+            <h1 class="menue">Burger</h2>
+        `;
+        content.appendChild(text_three);
+
+        const text_four = document.createElement("div");
+        text_four.classList.add("text");
+        text_four.classList.add("dessert");
+        text_four.innerHTML = `
+            <h1 class="menue">Dessert</h2>
+        `;
+        content.appendChild(text_four);
+
+        const text_five = document.createElement("div");
+        text_five.classList.add("text");
+        text_five.classList.add("drink");
+        text_five.innerHTML = `
+            <h1 class="menue">Drink</h2>
+        `;
+        content.appendChild(text_five);
+    };
+
     homeBtn.addEventListener("click", () => loadContent(content, home));
     contactBtn.addEventListener("click", () => loadContent(content, contact));
+    menuBtn.addEventListener("click", () => loadContent(content, menu));
 
     // Load home content by default
     home(content);
